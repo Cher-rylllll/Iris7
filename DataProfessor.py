@@ -41,7 +41,7 @@ st.subheader('Class labels and their corresponding index number')
 st.write(['Iris-Setosa','Iris-Versicolor','Iris-Virginica'])
 
 st.subheader('Class labels and their corresponding index number')
-st.write(tabulate([['Iris-Setosa'], ['Iris-Versicolor'],['Iris-Virginica']], headers=['FlowerName']))
+st.write(tabulate([['Iris-Setosa'], ['Iris-Versicolor'],['Iris-Virginica']], headers=['FlowerName'], tablefmt='orgtbl'))
 
 st.subheader('Prediction')
 st.write(prediction)
