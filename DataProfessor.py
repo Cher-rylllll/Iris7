@@ -43,9 +43,6 @@ st.write(['Iris-Setosa','Iris-Versicolor','Iris-Virginica'])
 st.subheader('Class labels and their corresponding index number')
 st.write(tabulate([['Iris-Setosa'], ['Iris-Versicolor'],['Iris-Virginica']], headers=['FlowerName'], tablefmt='orgtbl'))
 
-from Pillow import Image
-st.image("https://miro.medium.com/max/700/1*uo6VfVH87jRjMZWVdwq3Vw.png", caption='Three Iris')
-
 st.subheader('Prediction')
 st.write(prediction)
 
