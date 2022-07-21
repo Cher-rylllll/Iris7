@@ -37,9 +37,6 @@ clf.fit(X, Y)
 prediction = clf.predict(df)
 prediction_proba = clf.predict_proba(df)
 
-from tabulate import tabulate
-print(tabulate([['Iris-Setosa'], ['Iris-Versicolor'],['Iris-Virginica']], headers=['FlowerName'])
-
 st.subheader('Class labels and their corresponding index number')
 st.write(['Iris-Setosa','Iris-Versicolor','Iris-Virginica'])
 
