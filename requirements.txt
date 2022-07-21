@@ -1,4 +1,4 @@
 pandas==1.3.5
 streamlit==1.11.0
-vsklearn==0.0
-sklearn-pandas==1.8.0
+sklearn==0.0
+
