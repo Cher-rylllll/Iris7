@@ -30,8 +30,6 @@ iris = pd.read_csv('https://raw.githubusercontent.com/Cher-rylllll/Iris7/main/IR
 X = iris.data
 Y = iris.target
 
-pd.load_iris()
-
 clf = RandomForestClassifier()
 clf.fit(X, Y)
 
