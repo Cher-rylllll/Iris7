@@ -27,10 +27,6 @@ st.subheader('User Input parameters')
 st.write(df)
 
 iris = pd.read_csv('https://raw.githubusercontent.com/Cher-rylllll/Iris7/main/IRIS.csv')
-X = iris.data
-Y = iris.target
-
-iris = pd.read_csv('https://raw.githubusercontent.com/Cher-rylllll/Iris7/main/IRIS.csv')
 X = iris.drop('species',axis = 1)
 Y = iris['species']
 
