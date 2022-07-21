@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 from tabulate import tabulate
-from Pil import image
 from sklearn.ensemble import RandomForestClassifier
 
 st.write("""
@@ -41,12 +40,9 @@ prediction_proba = clf.predict_proba(df)
 st.subheader('Class labels and their corresponding index number')
 st.write(['Iris-Setosa','Iris-Versicolor','Iris-Virginica'])
 
-st.image(image, caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
-image = Image.open('https://miro.medium.com/max/700/1*uo6VfVH87jRjMZWVdwq3Vw.png')
-st.image(image, caption='Sunrise by the mountains')
-
 st.subheader('Class labels and their corresponding index number')
 st.write(tabulate([['Iris-Setosa'], ['Iris-Versicolor'],['Iris-Virginica']], headers=['FlowerName'], tablefmt='orgtbl'))
+st.image(image, caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
 
 st.subheader('Prediction')
 st.write(prediction)
