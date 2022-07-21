@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 from tabulate import tabulate
-from pillow import image
+from Pillow import image
 from sklearn.ensemble import RandomForestClassifier
 
 st.write("""
