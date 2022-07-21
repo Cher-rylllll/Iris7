@@ -30,6 +30,10 @@ iris = pd.read_csv('https://raw.githubusercontent.com/Cher-rylllll/Iris7/main/IR
 X = iris.data
 Y = iris.target
 
+iris = pd.read_csv('https://raw.githubusercontent.com/Cher-rylllll/Iris7/main/IRIS.csv')
+X = iris.drop('species',axis = 1)
+Y = iris['species']
+
 clf = RandomForestClassifier()
 clf.fit(X, Y)
 
@@ -37,11 +41,10 @@ prediction = clf.predict(df)
 prediction_proba = clf.predict_proba(df)
 
 st.subheader('Class labels and their corresponding index number')
-st.write(iris.target_names)
+st.write(['Iris-Setosa','Iris-Versicolor','Iris-Virginica'])
 
 st.subheader('Prediction')
-st.write(iris.target_names[prediction])
-#st.write(prediction)
+st.write(prediction)
 
 st.subheader('Prediction Probability')
 st.write(prediction_proba)
