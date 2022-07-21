@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+from tabulate import tabulate
 from sklearn.ensemble import RandomForestClassifier
 
 st.write("""
@@ -35,17 +36,6 @@ clf.fit(X, Y)
 
 prediction = clf.predict(df)
 prediction_proba = clf.predict_proba(df)
-
-#create data
-data = [["Iris-Setosa"], 
-        ["Iris-Versicolor"], 
-        ["Iris-Virginica"]]
-  
-#define header names
-col_names = ["Flower Name"]
-
-#display table
-print(tabulate(data, headers=col_names))
 
 st.subheader('Class labels and their corresponding index number')
 st.write(['Iris-Setosa','Iris-Versicolor','Iris-Virginica'])
