@@ -26,9 +26,11 @@ df = user_input_features()
 st.subheader('User Input parameters')
 st.write(df)
 
-iris = datasets.load_iris()
+iris = pd.read_csv('https://raw.githubusercontent.com/Cher-rylllll/Iris7/main/IRIS.csv')
 X = iris.data
 Y = iris.target
+
+pd.load_iris()
 
 clf = RandomForestClassifier()
 clf.fit(X, Y)
