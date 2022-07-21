@@ -44,6 +44,9 @@ data = [["Iris-Setosa"],
 #define header names
 col_names = ["Flower Name"]
 
+#display table
+print(tabulate(data, headers=col_names))
+
 st.subheader('Class labels and their corresponding index number')
 st.write(['Iris-Setosa','Iris-Versicolor','Iris-Virginica'])
 
