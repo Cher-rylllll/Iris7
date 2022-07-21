@@ -42,7 +42,14 @@ st.write(['Iris-Setosa','Iris-Versicolor','Iris-Virginica'])
 
 st.subheader('Class labels and their corresponding index number')
 st.write(tabulate([['Iris-Setosa'], ['Iris-Versicolor'],['Iris-Virginica']], headers=['FlowerName'], tablefmt='orgtbl'))
+
+st.subheader('Iris Picture')
 st.image(image, caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+
+from PIL import Image
+image = Image.open('iris.png' from "https://miro.medium.com/max/700/1*uo6VfVH87jRjMZWVdwq3Vw.png")
+
+st.image(image, caption='Three Iris)
 
 st.subheader('Prediction')
 st.write(prediction)
