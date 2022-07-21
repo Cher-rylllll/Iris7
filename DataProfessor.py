@@ -40,7 +40,7 @@ prediction_proba = clf.predict_proba(df)
 st.subheader('Class labels and their corresponding index number')
 st.write(['Iris-Setosa','Iris-Versicolor','Iris-Virginica'])
 
-from tabulate import tabulate
+st.subheader('Class labels and their corresponding index number')
 st.write(tabulate([['Iris-Setosa'], ['Iris-Versicolor'],['Iris-Virginica']], headers=['FlowerName'])
 
 st.subheader('Prediction')
